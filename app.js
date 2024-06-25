@@ -6,6 +6,9 @@ let chute = prompt("escolha um numero de 1 a 10");
 let tentativa = 1;
 
 while (chute != numeroSecreto) {
+    // if (chute == numeroSecreto) {
+    //     break
+    // }
     if (numeroSecreto > chute) {
         alert("tente um numero mais alto");
     } else {
@@ -14,7 +17,9 @@ while (chute != numeroSecreto) {
     chute = prompt("escolha um numero de 1 a 10");
     tentativa++;
 }
-if (chute == numeroSecreto) {
-    alert(`Você acertou o numero ${numeroSecreto}`);
-    alert(`Você utilizou ${tentativa} tentativas`);
-}
+
+
+if (tentativa > 1) { alert(`Você acertou o numero ${numeroSecreto} e utilizou ${tentativa} tentativas`); }
+else { alert(`Você acertou o numero ${numeroSecreto} e utilizou ${tentativa} tentativa`); }
+
+
