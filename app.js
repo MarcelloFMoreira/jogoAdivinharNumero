@@ -18,5 +18,3 @@ if (chute == numeroSecreto) {
     alert(`Você acertou o numero ${numeroSecreto}`);
     alert(`Você utilizou ${tentativa} tentativas`);
 }
-
-//alterando javaScript
