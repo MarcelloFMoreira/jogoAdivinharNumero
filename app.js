@@ -1,20 +1,17 @@
 alert("hello word");
-
-let numeroSecreto = parseInt(Math.random() * 10 + 1);
+let numeroMaximo = 100;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
-let chute = prompt("escolha um numero de 1 a 10");
+let chute = prompt(`escolha um numero de 1 a ${numeroMaximo}`);
 let tentativa = 1;
 
 while (chute != numeroSecreto) {
-    // if (chute == numeroSecreto) {
-    //     break
-    // }
     if (numeroSecreto > chute) {
         alert("tente um numero mais alto");
     } else {
         alert("tente um numero mais baixo");
     }
-    chute = prompt("escolha um numero de 1 a 10");
+    chute = prompt(`escolha um numero de 1 a ${numeroMaximo}`);
     tentativa++;
 }
 
