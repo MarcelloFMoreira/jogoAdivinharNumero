@@ -1,6 +1,6 @@
 alert("hello word");
 
-let numeroSecreto = 4;
+let numeroSecreto = parseInt(Math.random() * 10 + 1);
 console.log(numeroSecreto);
 let chute = prompt("escolha um numero de 1 a 10");
 let tentativa = 1;
@@ -19,7 +19,5 @@ while (chute != numeroSecreto) {
 }
 
 
-if (tentativa > 1) { alert(`Você acertou o numero ${numeroSecreto} e utilizou ${tentativa} tentativas`); }
-else { alert(`Você acertou o numero ${numeroSecreto} e utilizou ${tentativa} tentativa`); }
-
-
+let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa'
+alert(`Você acertou o numero ${numeroSecreto} e utilizou ${tentativa} ${palavraTentativa}`);
